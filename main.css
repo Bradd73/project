@@ -1,0 +1,243 @@
+* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101018;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #19152e, #111827);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #8b5cf6;
+}
+
+/* Main Website Title */
+h1 {
+    font-size: 48px;
+    color: #a78bfa;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px #8b5cf6;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #e0e7ff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 18px;
+    border: 1px solid #6366f1;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #8b5cf6;
+    color: white;
+    box-shadow: 0 0 15px #8b5cf6;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 400px;
+    background: radial-gradient(circle, #252044, #101018 70%);
+}
+
+/* Main Heading */
+h2 {
+    font-size: 36px;
+    color: #c4b5fd;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    color: #b8b8c9;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        max-width: 250px;
+    }
+
+    main {
+        padding: 60px 15px;
+    }
+}
+
+/* Media Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color: #1c1b2e;
+    border: 1px solid #6366f1;
+    border-radius: 12px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #8b5cf6;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    color: #a78bfa;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.gallery-item p {
+    color: #b8b8c9;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.back-home {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 25px;
+    color: white;
+    background-color: #7c3aed;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    background-color: #a78bfa;
+    box-shadow: 0 0 15px #8b5cf6;
+}
+
+/* Mobile Gallery Layout */
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+/* Beta Tester Sign-Up Form */
+
+.signup-form {
+    background-color: #1c1b2e;
+    border: 1px solid #6366f1;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 550px;
+    margin: 40px auto;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+}
+
+.signup-form label {
+    display: block;
+    color: #c4b5fd;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #6366f1;
+    border-radius: 8px;
+    background-color: #101018;
+    color: white;
+    font-size: 15px;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+    outline: none;
+    border-color: #a78bfa;
+    box-shadow: 0 0 10px #8b5cf6;
+}
+
+.signup-form textarea {
+    resize: vertical;
+}
+
+.signup-form .checkbox-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.signup-form .checkbox-area input {
+    width: auto;
+}
+
+.signup-form .checkbox-area label {
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7c3aed;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #a78bfa;
+    box-shadow: 0 0 15px #8b5cf6;
+}

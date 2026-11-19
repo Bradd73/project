@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IndiVault - Beta Tester Sign-Up</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IndiVault</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="systemrequirements.html">System Requirements</a>
+            <a href="mediagallery.html">Media Gallery</a>
+            <a href="betatest.html">Beta Tester Sign-Up Form</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Become a Beta Tester!</h2>
+
+        <p>
+            Want to play indie games before everyone else?
+            Sign up below and help developers improve their games!
+        </p>
+
+        <form class="signup-form" action="#" method="post">
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"
+                placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                placeholder="Enter your email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                min="16" placeholder="Enter your age" required>
+
+            <label for="genre">Favourite Game Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="">Select a genre</option>
+                <option value="Adventure">Adventure</option>
+                <option value="RPG">Role-Playing Games (RPG)</option>
+                <option value="Horror">Horror</option>
+                <option value="Platformer">Platformer</option>
+                <option value="Strategy">Strategy</option>
+                <option value="Simulation">Simulation</option>
+            </select>
+
+            <label for="experience">Gaming Experience:</label>
+            <select id="experience" name="experience" required>
+                <option value="">Select your experience</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Experienced">Experienced</option>
+                <option value="Expert">Expert</option>
+            </select>
+
+            <label for="reason">Why do you want to become a beta tester?</label>
+            <textarea id="reason" name="reason"
+                rows="5"
+                placeholder="Tell us why you would make a great beta tester..."
+                required></textarea>
+
+            <div class="checkbox-area">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">
+                    I agree to participate in beta testing and provide feedback.
+                </label>
+            </div>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+        <a class="back-home" href="index.html">Back to Home</a>
+
+    </main>
+
+</body>
+</html>
