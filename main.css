@@ -1,3 +1,42 @@
+body {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+main p {
+    margin: 0 auto 30px;
+}
+
+main .back-home {
+    margin: 10px;
+}
+
+
 * General Page Styling */
 * {
     margin: 0;

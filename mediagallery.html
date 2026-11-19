@@ -60,4 +60,19 @@
     </main>
 
 </body>
+<script>
+    window.addEventListener("load", function() {
+
+        let overlay = document.createElement("div");
+
+        overlay.className = "explosion-overlay";
+
+        document.body.appendChild(overlay);
+
+        setTimeout(function() {
+            overlay.remove();
+        }, 2000);
+
+    });
+</script>
 </html>
