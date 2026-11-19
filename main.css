@@ -306,3 +306,48 @@ p {
     background-color: #009900;
     transform: scale(1.05);
 }
+/* system requirments */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.gallery-item {
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #444;
+    min-height: 130px;
+    transition: 0.4s ease;
+}
+
+.gallery-item h3 {
+    color: #00ccff;
+}
+
+/* Hide the answers */
+.gallery-item p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+/* Display answers when hovering */
+.gallery-item:hover p {
+    opacity: 1;
+    max-height: 150px;
+}
+
+/* Highlight the card */
+.gallery-item:hover {
+    background-color: #333;
+    border-color: #00ccff;
+    transform: scale(1.05);
+}
